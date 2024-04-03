@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".presentation.fragment.dialoguefragment.ScoreHintDialogue">
+
+
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:paddingTop="20dp"
+    android:paddingBottom="@dimen/dp_20"
+    android:gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginStart="@dimen/h14"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/h14"
+        android:layout_height="wrap_content"
+        android:text="Score is according to the due date, more early you pay your recovery more score you got for example if you pay your loan 25 days before your loan duedate your score will be 25, if you pay your loan on duedate your score will be 0.\n \nif you pay your recovery after duedate your score will be in negative for example if you pay 5 days after your duedate your score will be -5. \n\nYour score will help you in future, if you take another loan. More score you have, more chances of getting your loan approved.  "
+        android:textSize="@dimen/h14"
+        android:padding="@dimen/h10"
+        android:textColor="@color/Black"/>
+
+
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bt_gradient"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/White"
+        android:text="@string/ok"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

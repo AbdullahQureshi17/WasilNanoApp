@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".presentation.fragment.profile.ProfileStep3Fragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/screen_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/Black"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tv_profile_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Financials "
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_profile_heading"
+            android:layout_centerHorizontal="true"
+            android:text="for Evaluation"
+            android:textColor="@color/Black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--    <LinearLayout-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="horizontal">-->
+            <!--        -->
+            <!--        <androidx.appcompat.widget.AppCompatImageView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:background="@drawable/ic_step"-->
+            <!--        -->
+            <!--        -->
+            <!--    </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/what_will_you_use_the_loan_for"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="@string/select_here"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/purpose"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginBottom="4dp"
+                    android:maxHeight="18dp"
+                    android:text="@string/enter_purpose_here"
+                    android:textSize="@dimen/h12"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edPurpose"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:imeOptions="actionNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxHeight="0dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/profession"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_earning_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="@string/select_here"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/organizationname"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxHeight="18dp"
+                    android:text="@string/name_of_organization"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edorganization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxHeight="0dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="vertical">
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="@color/Black"-->
+                <!--                    android:layout_marginStart="@dimen/dp_15"-->
+                <!--                    android:layout_marginTop="@dimen/dp_10"-->
+                <!--                    android:text="Profession Info"-->
+                <!--                    android:textSize="12sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <TextView-->
+                <!--                    android:fontFamily="@font/quicksand_regular"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="@color/Black"-->
+                <!--                    android:layout_marginStart="@dimen/dp_15"-->
+                <!--                    android:layout_marginTop="@dimen/dp_10"-->
+                <!--                    android:text="Profession/Nature of business"-->
+                <!--                    android:textSize="12sp" />-->
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/sp_professions"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="@dimen/dp_10"-->
+                <!--                    android:textColor="@color/Gray"-->
+                <!--                    android:textSize="@dimen/h14" />-->
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="1dp"-->
+                <!--                    android:layout_marginStart="16dp"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:background="@color/Light_Grey" />-->
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monthly_income"
+                    android:textColor="@color/Black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+                <!--                <EditText-->
+                <!--                    android:layout_marginStart="10dp"-->
+                <!--                    android:imeOptions="actionNext"-->
+                <!--                    android:maxHeight="0dp"-->
+                <!--                    android:fontFamily="@font/quicksand_regular"-->
+                <!--                    android:paddingStart="@dimen/dp_10"-->
+                <!--                    android:backgroundTint="@color/Transparent"-->
+                <!--                    android:id="@+id/income_from"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="number"-->
+                <!--                    android:hint="Monthly income"-->
+                <!--                    android:textColor="@color/Gray"-->
+                <!--                    android:textSize="12sp"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fIncome"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxHeight="18dp"
+                    android:text="@string/expected_annual_income"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ed_fIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textColorHint="@color/LightGrey"
+                    android:hint="@string/enter_your_expected_annual_income"
+                    android:maxHeight="0dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+
+            </LinearLayout>
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:background="@drawable/border_gray_light"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_10"-->
+            <!--                    android:text="Marital Status"-->
+            <!--                    android:textColor="@color/Black"-->
+            <!--                    android:textSize="@dimen/h12"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/sp_marital_status"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/dp_5"-->
+            <!--                    android:layout_marginBottom="@dimen/dp_10"-->
+            <!--                    android:text="select here"-->
+            <!--                    android:textColor="@color/Gray"-->
+            <!--                    android:textSize="@dimen/h10" />-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/no_of_family_members_you_are_financially_responsible_for"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_dependent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="@string/select_here"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h10" />
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:background="@drawable/border_gray_light"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_10"-->
+            <!--                    android:text="Visit Abroad ?"-->
+            <!--                    android:textColor="@color/Black"-->
+            <!--                    android:textSize="@dimen/h12"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/sp_abroad"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/dp_5"-->
+            <!--                    android:layout_marginBottom="@dimen/dp_10"-->
+            <!--                    android:text="select here"-->
+            <!--                    android:textColor="@color/Gray"-->
+            <!--                    android:textSize="@dimen/h10" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/visit_purpose"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:background="@drawable/border_gray_light"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_10"-->
+            <!--                    android:text="Abrod visit purpose"-->
+            <!--                    android:textColor="@color/Black"-->
+            <!--                    android:textSize="@dimen/h12"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/sp_abroad_pur"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/dp_5"-->
+            <!--                    android:layout_marginBottom="@dimen/dp_10"-->
+            <!--                    android:text="select here"-->
+            <!--                    android:textColor="@color/Gray"-->
+            <!--                    android:textSize="@dimen/h10" />-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/border_gray_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/do_you_have_any_other_loans_currently"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_open_close_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="@string/select_here"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/banknamelayout"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@drawable/border_gray_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:maxHeight="17dp"
+                        android:text="@string/which_bank_institution"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/h12"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/bankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:backgroundTint="@color/Transparent"
+                        android:hint="@string/enter_bank_name"
+                        android:inputType="text"
+                        android:maxHeight="0dp"
+                        android:textColor="@color/Gray"
+                        android:textSize="@dimen/h14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/amountlayout"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_gray_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:maxHeight="17dp"
+                        android:text="@string/total_loan_amount"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/h12"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:backgroundTint="@color/Transparent"
+                        android:hint="@string/enter_total_amount"
+                        android:inputType="number"
+                        android:maxHeight="0dp"
+                        android:textColor="@color/Gray"
+                        android:textSize="@dimen/h14" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:visibility="visible"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:background="@drawable/border_gray_light"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:textColor="@color/Black"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_10"-->
+            <!--                    android:text="Do you avail loan from Akhuwat earlier"-->
+            <!--                    android:textSize="@dimen/h12"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/sp_akhuwat_loan"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/dp_5"-->
+            <!--                    android:layout_marginBottom="@dimen/dp_10"-->
+            <!--                    android:text="select here"-->
+            <!--                    android:textColor="@color/Gray"-->
+            <!--                    android:textSize="@dimen/h10" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:background="@drawable/border_gray_light"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginTop="@dimen/dp_10"-->
+            <!--                    android:text="Geotagging of current address"-->
+            <!--                    android:textColor="@color/Black"-->
+            <!--                    android:textSize="@dimen/h12"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_location_ponits"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="@dimen/dp_15"-->
+            <!--                    android:layout_marginBottom="@dimen/dp_5"-->
+            <!--                    android:drawableEnd="@drawable/ic_location"-->
+            <!--                    android:fontFamily="@font/quicksand_regular"-->
+            <!--                    android:hint="Select geo location"-->
+            <!--                    android:paddingStart="3dp"-->
+            <!--                    android:paddingTop="5dp"-->
+            <!--                    android:paddingEnd="@dimen/dp_15"-->
+            <!--                    android:paddingBottom="5dp"-->
+            <!--                    android:textColor="@color/Gray"-->
+            <!--                    android:maxLines="1"-->
+            <!--                    android:textSize="13sp"-->
+            <!--                    android:visibility="visible" />-->
+
+            <!--            </LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/dp_15"
+
+                android:background="@drawable/border_gray_light"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:text="@string/mobile_wallet_a_c"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="@string/_12456"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/save_data"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gradient"
+                    android:text="@string/submit"
+                    android:textSize="@dimen/h16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

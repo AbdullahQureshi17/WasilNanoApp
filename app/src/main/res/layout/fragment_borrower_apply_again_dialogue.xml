@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/Transparent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_failed" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fee_sucess_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cross" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_tick"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/alert_message"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/previous_loan_of_this_user_is_completed_will_you_like_to_apply_again"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="42dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_weight="0.5"
+                android:background="@drawable/bt_gradient"
+                android:text="@string/apply_again"
+                android:textColor="@color/White"
+                android:textSize="@dimen/h12" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_weight="0.5"
+                android:background="@drawable/bt_gradient"
+                android:text="@string/cancel_add_another"
+                android:textColor="@color/White"
+                android:textSize="@dimen/h12" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

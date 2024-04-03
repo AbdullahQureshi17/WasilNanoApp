@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".correspondant.fragment.ApplicationinProcessFrag">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@drawable/user_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_profile_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application in Process"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/rlcnic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_profile_heading"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:background="@drawable/search_bg">
+
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/ed_cnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_toLeftOf="@+id/search"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="Enter your CNIC Name, Phone Number"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxHeight="0dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:src="@drawable/ic_search" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--        <Button-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:id="@+id/bt_search"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_toRightOf="@+id/ed_cnic"-->
+    <!--            android:layout_weight="0.3"-->
+    <!--            android:fontFamily="@font/quicksand_bold"-->
+    <!--            android:background="@drawable/bt_search"-->
+    <!--            android:paddingStart="5dp"-->
+    <!--            android:paddingEnd="5dp"-->
+    <!--            android:text="Search" />-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/filter"
+        android:weightSum="5"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/round_bt_reject"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:padding="6dp"
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All"
+            android:textAlignment="center"
+            android:textColor="@color/gradientstart"
+            android:textStyle="bold"
+            android:textSize="@dimen/h12"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+
+        <TextView
+            android:padding="6dp"
+            android:id="@+id/added"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Added"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/h12"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <TextView
+            android:padding="6dp"
+            android:id="@+id/pending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="InProcess"
+            android:textSize="@dimen/h12"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/disbursed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="0.9"
+            android:text="Disbursed"
+            android:textSize="@dimen/h12"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/completed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Completed"
+            android:textSize="@dimen/h12"
+            android:layout_gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filter"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/no_borrower"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:src="@drawable/ic_noborrower"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

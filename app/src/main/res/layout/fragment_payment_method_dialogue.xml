@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_terms"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_30"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/Black"
+                android:textSize="22sp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/termstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/your_due_date_to_pay_loan_amount_is_you_can_pay_your_loan_either_in_installments_or_in_full_within_your_due_date_application_processing_fee_for_loan_is_added_in_the_due_amount_alongwith_the_loan_amount_approved"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/btnCancel"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/h13"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/Black" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_continue"
+                    android:layout_width="130dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h13"
+                    android:background="@drawable/bt_gradient"
+                    android:text="@string/continuee"
+                    android:textColor="@color/White" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</RelativeLayout>

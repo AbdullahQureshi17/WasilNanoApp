@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:paddingStart="@dimen/dp_15"
+    android:paddingEnd="@dimen/dp_15"
+    android:background="@color/Transparent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogue_background"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp"
+            android:src="@drawable/tick_sucess" />
+
+        <LinearLayout
+            android:layout_below="@+id/iv_tick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Congratulations!"
+                android:textColor="@color/Black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:text="Fee has been submitted successfully"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bt_gradient"
+                android:text="CONTINUE"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

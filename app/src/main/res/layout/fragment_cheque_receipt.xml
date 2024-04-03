@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".presentation.fragment.businesscorrespondance.ChequeReceiptFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/screen_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_profile_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/profile"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/Black"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_profile_heading"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cheque_information"
+            android:textColor="@color/Black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_cheque_picture_here_given_to_the_borrower"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_below="@+id/text"
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/recipt"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_image_place" />
+
+            <TextView
+                android:id="@+id/cnic_front_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/quicksand_semi_bold"
+                android:text="@string/upload_cheque_picture"
+                android:textColor="@color/Black"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bt_gradient"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/submit"
+            android:textSize="@dimen/h12" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

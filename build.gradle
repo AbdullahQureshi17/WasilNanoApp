@@ -1,0 +1,86 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath 'com.google.gms:google-services:4.3.3'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        gradlePluginPortal()
+      //  maven { url 'https://jitpack.io' }
+       // maven { url "https://jitpack.io" }
+      //  maven { url "http://dl.bintray.com/jlmd/maven" }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        maven { url 'https://maven.microblink.com' }
+        
+    }
+
+    task checkstyle(type: Checkstyle) {
+        description 'Check code standard'
+        group 'verification'
+        configFile file("${project.rootDir}/tools/rules-checkstyle.xml")
+        source fileTree('src/main/java')
+        include '**/*.java'
+        exclude '**/gen/**'
+
+        classpath = files()
+        showViolations true
+
+        reports {
+            xml.enabled = true
+            html.enabled = true
+            html {
+                destination file("$project.buildDir/outputs/checkstyle/checkstyle.html")
+            }
+        }
+    }
+
+    task pmd(type: Pmd) {
+        ruleSetFiles = files("${project.rootDir}/tools/pmd-ruleset.xml")
+        ignoreFailures = false
+        ruleSets = []
+
+        source 'src'
+        include '**/*.java'
+        exclude '**/gen/**'
+
+        reports {
+            xml.enabled = false
+            html.enabled = true
+            xml {
+                destination file("$project.buildDir/outputs/pmd/pmd.xml")
+            }
+            html {
+                destination file("$project.buildDir/outputs/pmd/pmd.html")
+            }
+        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+project.ext {
+    blinkIdVersion = '5.7.0'
+    compileSdkVersion = 29
+    targetSdkVersion = 29
+    appCompatVersion = '1.1.0'
+}

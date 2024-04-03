@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/myloan_bg"
+    tools:context=".correspondant.fragment.AddNewBorrower">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/Transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/textcolor"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tv_profile_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Potential Applicant"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name*"
+            android:layout_marginTop="9dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparent"
+            android:id="@+id/name"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:hint="enter name"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNIC*"
+            android:layout_marginTop="7dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/ed_cnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:backgroundTint="@color/Transparent"
+            android:hint="@string/enter_your_cnic"
+            android:inputType="none"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/h14" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone*"
+                android:layout_marginTop="9dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/rlCall"
+                android:background="@color/Transparent"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="enter name"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="12"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/rlCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:background="@drawable/round_get_direction"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_calling" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toRightOf="@+id/image"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sanction No*"
+            android:layout_marginTop="9dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:focusable="false"
+
+            android:clickable="false"
+            android:fontFamily="@font/quicksand_medium"
+            android:inputType="none"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparent"
+            android:id="@+id/sanctionno"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:hint="enter sanction no"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">,
+
+        <TextView
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address*"
+            android:layout_marginTop="9dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:fontFamily="@font/quicksand_medium"
+            android:inputType="text"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparent"
+            android:id="@+id/address"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:hint="enter address"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Call Response"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/h12"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="@string/select_here"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/h10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+
+            android:visibility="gone"
+            android:id="@+id/btapplicant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_weight=".5"
+            android:background="@drawable/bt_gradient"
+            android:text="Add Applicant"
+            android:textSize="@dimen/h16"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addresponse"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".5"
+            android:background="@drawable/bt_gradient"
+            android:text="Add Response"
+            android:textSize="@dimen/h16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/save"-->
+<!--        android:layout_marginTop="@dimen/dp_25"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="@dimen/dp_30"-->
+<!--        android:layout_marginEnd="@dimen/dp_30"-->
+<!--        android:background="@drawable/bt_gradient">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:fontFamily="@font/quicksand_medium"-->
+<!--            android:text="Add"-->
+<!--            android:textColor="@color/white" />-->
+
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>

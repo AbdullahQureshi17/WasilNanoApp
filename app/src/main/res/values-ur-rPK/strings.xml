@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Wasil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_account">Create a new one11</string>
+    <string name="new_here">New here 11?</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or_sign_in_with">Or Sign in with</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="remember_me">remember me11</string>
+    <string name="enter_your_password">enter your password11</string>
+    <string name="password">Password11</string>
+    <string name="enter_email_address">enter email address11</string>
+    <string name="personal_info">Updated your name, parantage, CNIC, profession and montly income11</string>
+    <string name="Account_info">Updated your account number, telco and others11</string>
+    <string name="contact_info">Updated your address, province, country, phone and others11</string>
+    <string name="general_loan_desc">The main purpose of this product is to fulfil the basic needs of the applicant. The applicant can pay the utility bill/school fee/house rent, buy grocery items/medicines. The loan will be repayable in lump sum (60 days).111</string>
+    <string name="telco_fee"><![CDATA[Telco transaction cost (Disbursement & Recovery]]></string>
+    <string name="disclaimer">CIB Report is compulsary for loan amount greater than Rs. 10,000. The payment of CIB report will be made available through mobile wallet account.</string>
+    <string name="installments">Calculate montly \n   Installments11</string>
+
+    <string name="facebook_app_id">201827167859625</string>
+    <string name="fb_login_protocol_scheme">fb201827167859625</string>
+    <string name="failed">Your transcation has been failed due to \nserver down11</string>
+    <string name="sucess">Your transaction has been \nsuccessfully done11</string>
+    <string name="enter_access_code_below">We have sent an access code \n via SMS for mobile number verification</string>
+    <string name="page_number">page_number11</string>
+
+    <string name="fee_purpose">Application fee is non-refundable, which will be used for evaluation of loan documents and paying different regulatory fees and transaction costs.</string>
+    <!--    <string name="welcome_text">is the only mobile application that \n provides INTEREST-FREE loans targeted to the \n most financially marginalised in pakistan.</string>-->
+    <string name='welcome_text'><font color='#ffffff'><br>is the only mobile application that </br> provides </font><font color='#CCA348'><b>INTEREST-FREE11</b></font><font color='#ffffff'> loans targeted to the <br>most financially marginalised in pakistan.</br> </font></string>
+    <string name="terms"> </string>
+    <string name="login">Login</string>
+    <string name="use_your_pin_code_to_login_the_application">Use your PIN code to login the application11</string>
+    <string name="pin_code">PIN code</string>
+    <string name="forget_pin">Forget/Change your PIN?11</string>
+    <string name="unlock">Unlock</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number11</string>
+    <string name="phone_number">Phone Number11</string>
+    <string name="okay">Okay</string>
+    <string name="enable_biometric_login">Enable Biometric Login11</string>
+    <string name="login_with_your_pin">Login with your PIN</string>
+    <string name="please_enter_your_4_digits_pin_code">Please enter your 4 digits PIN 11</string>
+    <string name="forget_your_pin">Forget your PIN?11</string>
+    <string name="phone_verification">Phone Verification11</string>
+    <string name="enter_your_otp_code">Enter your OTP 11</string>
+    <string name="verify_now">Verify now</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="set_a_pin_code_for_future_login">Set a PIN code for future login</string>
+    <string name="please_enter_4_digit_pin_nplease_do_not_share_your_pin_with_anyone">Please enter 4-digit PIN \nPlease do not share your PIN with anyone</string>
+    <string name="enter_your_4_digit_pin_code">Enter your 4-digit PIN code</string>
+    <string name="re_enter_your_4_digit_pin_code">Re-enter your 4-digit PIN code</string>
+    <string name="save">Save</string>
+    <string name="biometric_login">Biometric Login</string>
+    <string name="use_your_biometric_to_login_to_e_qard_application">Use your Biometric to login to e-Qard Application</string>
+    <string name="cancel">Cancel</string>
+    <string name="disable_biometric_login">Disable Biometric Login</string>
+    <string name="you_would_need_to_enter_you_phone_number_and_pin_code_if_you_disable_your_biometric_login_are_you_sure_you_want_to_disable_this">You would need to enter you Phone number and Pin Code if you disable your biometric login, are you sure you want to disable this.?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="transaction_id">Transaction ID:</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="for_submitting_your_information_for_credit_evaluation">for submitting your information for credit evaluation</string>
+    <string name="no_user_found_would_you_like_to_add_this_user">No User found, Would you like to add this User?</string>
+    <string name="add">Add</string>
+    <string name="cancel_user_add">Cancel</string>
+    <string name="alert_message">Alert Message!</string>
+    <string name="your_application_fee_has_been_paid_successfully">Your Application fee has been paid successfully</string>
+    <string name="congratulation">Congratulation!</string>
+    <string name="your_loan_amount_is_disbursed">Your Loan amount is Disbursed</string>
+    <string name="continuee">Continue</string>
+    <string name="previous_loan_of_this_user_is_completed_will_you_like_to_apply_again">Previous loan of this user is completed. Will you like to apply again ?</string>
+    <string name="apply_again">Apply Again</string>
+    <string name="cancel_add_another">Cancel</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="your_due_date_to_pay_loan_amount_is_you_can_pay_your_loan_either_in_installments_or_in_full_within_your_due_date_application_processing_fee_for_loan_is_added_in_the_due_amount_alongwith_the_loan_amount_approved">Your due date to pay loan amount is: You can pay your loan either in installments or in full within your due date. Application processing fee for loan is added in the due amount alongwith the loan amount approved.</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="your_profile_has_been_created_successfully">Your account has been created successfully.</string>
+    <string name="amount">Amount</string>
+    <string name="due_date">Due Date</string>
+    <string name="status">Status</string>
+    <string name="loan_amount">Loan Amount:</string>
+    <string name="requested_amount">Requested Amount:</string>
+    <string name="please_transfer_recovery_amount_to_the_following_account_number_and_upload_screenshot_of_the_reciept">Please transfer recovery amount to the following account number and upload screenshot of the reciept.</string>
+    <string name="preferred_recovery_method">Preferred Recovery Method</string>
+    <string name="upload_reciept">Upload Reciept</string>
+    <string name="enter_amount_you_paid">Enter Amount Received in Rs.</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="date_of_transfer">Date of transfer</string>
+    <string name="select_date_of_transfer">Select date of transfer</string>
+    <string name="transaction_no">Transaction no</string>
+    <string name="enter_transcation_no">Enter transcation no</string>
+    <string name="your_recovery_is_recieved_please_wait_for_recovery_approval">Your recovery is recieved, Please wait for recovery approval.</string>
+    <string name="upload_cheque_picture_here_given_to_the_borrower">Upload Cheque picture here given to the borrower</string>
+    <string name="upload_cheque_picture">Upload Cheque picture</string>
+    <string name="submit">Submit</string>
+    <string name="upload_cnic_photo">Upload CNIC Photo*</string>
+    <string name="utility_bill_photo">Utility Bill Photo *</string>
+    <string name="salary_slip_photo_if_any">Salary slip photo (if any)</string>
+    <string name="back">Back</string>
+    <string name="what_will_you_use_the_loan_for">What will you use the loan for ?</string>
+    <string name="enter_purpose_here">Enter purpose here.</string>
+    <string name="profession">Profession</string>
+    <string name="name_of_organization">Name of organization</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="expected_annual_income">Expected Annual Income</string>
+    <string name="enter_your_expected_annual_income">Enter your expected annual income</string>
+    <string name="no_of_family_members_you_are_financially_responsible_for">No of family members you are financially responsible for ?</string>
+    <string name="do_you_have_any_other_loans_currently">Do you have any other loans currently?</string>
+    <string name="which_bank_institution">Which Bank/Institution</string>
+    <string name="enter_bank_name">Enter bank name</string>
+    <string name="total_loan_amount">Total Loan Amount</string>
+    <string name="enter_total_amount">Enter Total amount</string>
+    <string name="mobile_wallet_a_c">Mobile wallet A/c#</string>
+    <string name="_12456">12456</string>
+    <string name="purpose_of_application_fee">Purpose of Application Fee</string>
+    <string name="product_fee">Product Fee</string>
+    <string name="please_transfer_application_fee_to_the_following_account_number_and_upload_screenshot_of_the_receipt">Please transfer application fee to the following account number and upload screenshot of the receipt.</string>
+    <string name="upload_receipt">Upload Receipt</string>
+    <string name="savee">Save</string>
+    <string name="disclaimerr">Disclaimer</string>
+    <string name="apply_now">APPLY NOW</string>
+    <string name="_1_please_attach_your_latest_utility_bill">1. Please attach your latest utility bill</string>
+    <string name="_2_utility_bill_must_be_of_your_residential_address">2. Utility bill must be of your residential address</string>
+    <string name="account_info_will_be_used_for">Account info will be used for</string>
+    <string name="disbursement_and_recovery_of_loan">disbursement and recovery of loan</string>
+    <string name="bank_account_mobile_wallet">Bank Account/Mobile Wallet</string>
+    <string name="account_no">Wallet no #</string>
+    <string name="enter_your_account_number">Enter your account number</string>
+    <string name="bank_account_mobile_wallet_should_be_in_your_own_name_and_should_be_active">Bank Account/Mobile Wallet should be in your own name and should be active</string>
+
+
+    <string name="add_recovery">Add Recovery</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="select_date_of_birth">Select date of birth</string>
+    <string name="parentage">Parentage</string>
+    <string name="marital_status">Marital Status</string>
+
+    <string name="email_optional">Email (optional)</string>
+    <string name="enter_your_valid_email_address">Enter your valid email address</string>
+    <string name="next">Next</string>
+    <string name="cnic">CNIC</string>
+    <string name="enter_your_cnic">Enter your CNIC</string>
+    <string name="issue_date">Issue Date</string>
+    <string name="address">Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="permanent_addresss">Permanent address</string>
+    <string name="geo_location">Geo Location</string>
+    <string name="current_address">Current Address</string>
+    <string name="city_state">City/State</string>
+    <string name="duration_at_current_residence_in_years">Duration at current residence (in years)</string>
+    <string name="enter_duration_of_stay">enter duration of stay</string>
+    <string name="geotagging_of_current_address">Geotagging of current address</string>
+    <string name="select_geo_location">Select geo location</string>
+    <string name="duration_of_stay_at_this_place">Duration of stay at this place</string>
+    <string name="father_husband">father/husband</string>
+    <string name="enter_phone_no">Enter Phone no</string>
+    <string name="enter_phone_noo">Enter Phone No</string>
+    <string name="loan_amountt">Loan Amount</string>
+    <string name="enter_loan_amount">Enter Loan Amount</string>
+    <string name="enter_fee">Enter Fee</string>
+
+    <string name="loan_due_date">Loan Due Date</string>
+    <string name="your_due_date_is">Your Due date is</string>
+    <string name="add_loan">ADD LOAN</string>
+    <string name="user_found">User Found</string>
+    <string name="user_found_against_the_cnic_number_12345_3422456_3_with_name_of_xyz_and_parentage_abc_would_you_like_to_apply_loan">User found against the Cnic number 12345-3422456-3 with name of XYZ and parentage ABC. Would you like to apply loan ?</string>
+    <string name="apply_loan">Apply Loan</string>
+    <string name="cancell">Cancel</string>
+    <string name="do_you_or_anyone_in_your_household_have_a_smart_phone">Do you or anyone in your household have a smart phone?</string>
+    <string name="preferred_disbursement_method">Preferred Disbursement Method</string>
+    <string name="upload_disbursement_form_image">Upload Disbursement form image</string>
+    <string name="see_products">See Products</string>
+    <string name="your_documents_are_pending">! Your documents are pending</string>
+    <string name="your_profile_information_has_been_added_successfully">Your profile information has been added successfully.</string>
+
+    <string name="your_pin_code_has_been_successfully_set_up">Your PIN code has been successfully set-up.</string>
+
+    <string name="your_receipt_has_been_submitted_successfully">Your receipt has been submitted successfully</string>
+
+    <string name="congratualtion">Congratulations!</string>
+    <string name="user_has_been_created_successfully">User has been created successfully.</string>
+    <string name="for_adding_mobile_wallet_account">for adding mobile wallet account</string>
+    <string name="select_here">select_here</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="purpose">Purpose</string>
+    <string name="amountt">Amount</string>
+    <string name="ok">Ok</string>
+    <string name="welcome_to_e_qard">Welcome to e-Qard</string>
+    <string name="phone">Phone</string>
+
+
+    <string name="gender">Gender</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="transgender">Transgender</string>
+
+    <string name="profile">Profile</string>
+    <string name="basic_information">Basic Information</string>
+
+    <string name="select_your_branch">Select your branch</string>
+    <string name="wallet_information">Wallet Information</string>
+    <string name="what_did_they_use_loan_for">What did they use loan for?</string>
+    <string name="do_they_want_another_loan">Do they want another loan?</string>
+    <string name="does_this_person_s_household_have_a_mobile_wallet">Does this person\'s household have a mobile wallet?</string>
+    <string name="upload_recovery_form_image">upload recovery form image</string>
+
+    <string name="cheque_information">Cheque Information</string>
+    <string name="please_submit_your_application_fee_to_the_following_n_account_jazzcash_and_easy_paisa_account">Please submit your application fee to the following \n account (jazzcash and easy paisa account)</string>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/correspondant_home"
+            android:title="Home"
+            android:icon="@drawable/drawer_home"/>
+
+        <item
+            android:id="@+id/my_pot_borrowers"
+            android:title="Potential Borrowers"
+            android:icon="@drawable/ic_borrower"/>
+
+
+        <item
+            android:id="@+id/my_borrowers"
+            android:title="Interested Applicants"
+            android:icon="@drawable/my_bor"/>
+
+
+<!--        <item-->
+<!--            android:id="@+id/my_verification"-->
+<!--            android:title="Visits Pending"-->
+<!--            android:icon="@drawable/pending_drawer"-->
+<!--          />-->
+
+<!--        <item-->
+<!--            android:id="@+id/offline"-->
+<!--            android:title="Offline Application"-->
+<!--            android:icon="@drawable/pending_drawer"-->
+<!--            />-->
+
+        <item
+
+            android:title=" "/>
+
+        <item
+
+            android:title=""
+            />
+
+        <item
+
+            android:title=" "
+            />
+
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/drawer_about"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/drawer_policy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/drawer_terms"
+            android:title="Terms and Conditions"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/drawer_about"
+            android:title="FAQS" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_faq"
+            android:title="Help Center" />
+
+        <item
+            android:id="@+id/language"
+            android:icon="@drawable/ic_language"
+            android:title="Language" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out"
+            android:icon="@drawable/drawer_logout" />
+
+        <item android:title="" />
+
+
+    </group>
+</menu>

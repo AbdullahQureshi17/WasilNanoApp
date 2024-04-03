@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.fragment.businesscorrespondance.UserInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/screen_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_15"
+                android:background="@drawable/ic_back_arrow"
+                android:backgroundTint="@color/Black"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/tv_profile_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Profile"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_profile_heading"
+                android:layout_centerHorizontal="true"
+                android:text="Basic Information"
+                android:textColor="@color/Black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvpurpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/do_you_or_anyone_in_your_household_have_a_smart_phone"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/smartphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cvaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvpurpose"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/preferred_disbursement_method"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/MobileWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cvBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvaccount"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/select_your_branch"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvBranch"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/purpose"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h12" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:visibility="gone"
+            android:id="@+id/cv_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/purpose"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/purposeother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="purpose"
+                    android:inputType="text"
+                    android:textSize="@dimen/h14" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/image1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@+id/cv_purpose"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/recipt"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_image_place" />
+
+            <TextView
+
+                android:id="@+id/cnic_front_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/quicksand_semi_bold"
+                android:text="@string/upload_disbursement_form_image"
+                android:textColor="@color/Black"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="@dimen/dp_30">
+
+            <Button
+
+                android:id="@+id/addUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bt_gradient"
+                android:text="@string/submit"
+                android:textColor="@color/White"
+                android:textSize="@dimen/h12"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

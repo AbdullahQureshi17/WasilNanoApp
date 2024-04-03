@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Wasil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_account">Aik naya account bnayn.</string>
+    <string name="new_here">Ap yahan naey hain?</string>
+    <string name="continue_with_facebook">Facebook kay sath jari karen</string>
+    <string name="continue_with_google">Google kay sath jari karen</string>
+    <string name="or_sign_in_with">Ya apnay account kay sath sign in karen</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Kya ap password bhol gay hain?</string>
+    <string name="remember_me">password yaad rakhna </string>
+    <string name="enter_your_password">Apna password darj karain.</string>
+    <string name="password">Password</string>
+    <string name="enter_email_address">Apna email likhen</string>
+    <string name="personal_info">Apna naam, Sarparast yan Ma ka naam, CNIC, karobaar aur mahana amdani likhen  </string>
+    <string name="Account_info">Apna account number, jazz cash/telenor account yan easy paisa account number likhen.</string>
+    <string name="contact_info">Apnay ghar ka pata, Soobah, Mulq, phone aur deegar ko update karain.</string>
+    <string name="general_loan_desc">Es app ka maqsad apki choti zaroriyat ko pura karna hai.Ap ye qarza, bijli yan gas kay bill/school fees/makaan ka karaya ada karnay, ghar ka sauda/ dawaiyan kharednay ya karobar mei pesay laganay kay liye istamal kar saktay hain. Yeh qarz aik dafa (30 din) mei wapis kiya jy ga.</string>
+    <string name="telco_fee"><![CDATA[Telco transaction cost (Disbursement & Recovery]]></string>
+    <string name="disclaimer">10,000 hzar rupay se zyada qarz ki rakam kay liyay CIB report lazmi hay. CIB Report ki adaigi apkay mobile wallet account(jazz cash/easy paisa) se li jaey gi</string>
+    <string name="installments">kistain  </string>
+
+    <string name="facebook_app_id">201827167859625</string>
+    <string name="fb_login_protocol_scheme">fb201827167859625</string>
+    <string name="failed">Service down honay ki wajha se apke peson ki lain dain naqaam ho gaya hai.</string>
+    <string name="sucess">Aap ki peson ki lain dain mukamal ho gaya hai.</string>
+    <string name="enter_access_code_below">Hum nay mobile number ki tasdeeq kay liye SMS kay zariye aik Access code bheja hai.</string>
+    <string name="page_number">Safha number</string>
+
+    <string name="fee_purpose">Processing fees naqabli wapsi hai, es ka istemal ap kay qarz kay kagzaat ki jaanch partaal,  regulatory fees aur E-Qard transaction kay akhrajaat ko pura karnay k liye kiya jy ga.</string>
+    <!--    <string name="welcome_text">is the only mobile application that \n provides INTEREST-FREE loans targeted to the \n most financially marginalised in pakistan.</string>-->
+    <string name='welcome_text'><font color='#ffffff'><br>Eqard is the only mobile application that </br> provides </font><font color='#CCA348'><b>INTEREST-FREE</b></font><font color='#ffffff'> loans to the needy peoples. </font></string>
+    <string name="terms"> </string>
+    <string name="login">Login </string>
+    <string name="use_your_pin_code_to_login_the_application">Login karnay k liye apna PIN (khufiya number) istemal karain.</string>
+    <string name="pin_code">PIN code</string>
+    <string name="forget_pin">Apna PIN tabdeel karlain</string>
+    <string name="unlock">Unlock</string>
+    <string name="please_enter_your_phone_number">Brahay mehrbani apna phone number darj karain</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="okay">Theek hai</string>
+    <string name="enable_biometric_login">Biometric Login ON karen</string>
+    <string name="login_with_your_pin">Apnay PIN say login karain.</string>
+    <string name="please_enter_your_4_digits_pin_code">Brahay karam apna 4 hindso wala PIN code darj karain.</string>
+    <string name="forget_your_pin">Kya ap apna PIN bhool gaey hain?</string>
+    <string name="phone_verification">Phone ki tasdeeq</string>
+    <string name="enter_your_otp_code">Apna  tasdeeki Code ko likhen.</string>
+    <string name="verify_now">Tasdeeq karain.</string>
+    <string name="resend_code">Code phir se bhejain</string>
+    <string name="set_a_pin_code_for_future_login">Mustaqbil kay login kay liye aik PIN code muqarar karain.</string>
+    <string name="please_enter_4_digit_pin_nplease_do_not_share_your_pin_with_anyone">Brahay mehrbani apna 4 hindso\n wala PIN darj karain. Brahay mehrbani apna PIN kisi ko na batain.</string>
+    <string name="enter_your_4_digit_pin_code">Apna 4 hindso ka PIN code darj karain.</string>
+    <string name="re_enter_your_4_digit_pin_code">Apna 4 hindso wala pin code dobara darj karain.</string>
+    <string name="save">Mahfooz karain.</string>
+    <string name="biometric_login">Biometric login.</string>
+    <string name="use_your_biometric_to_login_to_e_qard_application">E-qard mei login krnay k liye apnay biometrics ka istemal karain.</string>
+    <string name="cancel">Cancel</string>
+    <string name="disable_biometric_login">Biometric Login ko khatam karen</string>
+    <string name="you_would_need_to_enter_you_phone_number_and_pin_code_if_you_disable_your_biometric_login_are_you_sure_you_want_to_disable_this">Apni biometric login ko ghair istamal shuda bananay kay liyay ap ko apna phone number aur pin code likhna ho ga, kia ap waqai isay ghair istamal shuda banana chahtay hain?</string>
+    <string name="no">Nahi</string>
+    <string name="yes">jee han</string>
+    <string name="transaction_id">Raseed Number (ID)</string>
+    <string name="thank_you">Shukriya!</string>
+    <string name="for_submitting_your_information_for_credit_evaluation">Qarz lenay kay liyay apni malomat jama karwanay ka shukriya</string>
+    <string name="no_user_found_would_you_like_to_add_this_user">Koi sarif nahi mila, kia ap es sarif ko shamil krna chahtay hain? </string>
+    <string name="add">Shamil karain</string>
+    <string name="cancel_user_add">Mansookh</string>
+    <string name="alert_message">paigham!</string>
+    <string name="your_application_fee_has_been_paid_successfully">Ap ki darkhwast fees ada ho chuki hay</string>
+    <string name="congratulation">Mubarak ho!</string>
+    <string name="your_loan_amount_is_disbursed">Qarz ki rakam apko bhej di gai hay. Apnay mobile account pe check karen.</string>
+    <string name="continuee">Jari rakhain</string>
+    <string name="previous_loan_of_this_user_is_completed_will_you_like_to_apply_again">Ap ka pichla karza muakamal ada ho chuka hay. Kya ap dobara qarza lena chahen gay?</string>
+    <string name="apply_again">Dobara darkhwast dain.</string>
+    <string name="cancel_add_another">Mansookh</string>
+    <string name="terms_and_conditions">Shrait-o-zwabit</string>
+    <string name="your_due_date_to_pay_loan_amount_is_you_can_pay_your_loan_either_in_installments_or_in_full_within_your_due_date_application_processing_fee_for_loan_is_added_in_the_due_amount_alongwith_the_loan_amount_approved">Qarz ki rakam ada karnay ki tareekh mukarar hay: ap apna qarza kiston men ada kar saktain hain yan phir qarz ki puri rakam mukarar tareekh pe bhi ada karsaktay hain. </string>
+    <string name="congratulations">Mubarak ho!</string>
+    <string name="your_profile_has_been_created_successfully">Apka account kamiyabi se bn gaya hai.</string>
+    <string name="amount">Raqam</string>
+    <string name="due_date">Aakhri Tareekh</string>
+    <string name="status">Status</string>
+    <string name="loan_amount">Qarz ki raqam:</string>
+    <string name="requested_amount">Darkhwast hui wi raqam</string>
+    <string name="please_transfer_recovery_amount_to_the_following_account_number_and_upload_screenshot_of_the_reciept">Bareh mehrbani diyay huay account number per wajib al ada raqam muntaqil karain aur raseed ki tasweer shaamil karain.</string>
+    <string name="preferred_recovery_method">Wasooli ka tarjeehi tareeqa</string>
+    <string name="upload_reciept">Raseed shaamil karain</string>
+    <string name="enter_amount_you_paid">Ada ki gayi rakam likhen</string>
+    <string name="enter_amount">Raqam likhen</string>
+    <string name="date_of_transfer">Rakam bhejnay ki tareekh</string>
+    <string name="select_date_of_transfer">Rakam bhejnay ki tareekh muntakhib karain.</string>
+    <string name="transaction_no">Raseed number</string>
+    <string name="enter_transcation_no">Raseed number likhen</string>
+    <string name="your_recovery_is_recieved_please_wait_for_recovery_approval">Ap ki qarz ki adaigi bhej di gai hay, brah-e-mehrabaani ada karda rakm ki tasdeeq ka intezar karain.</string>
+    <string name="upload_cheque_picture_here_given_to_the_borrower">Qarzdar ko diay gae cheque ki tasveer yahan lagain</string>
+    <string name="upload_cheque_picture">Cheque ki tasveer lagaen</string>
+    <string name="submit">Jama karwayn</string>
+    <string name="upload_cnic_photo">Shnakhti card ki tasveer lagain</string>
+    <string name="utility_bill_photo">Bijli/Gas kay bill ki tasveer</string>
+    <string name="salary_slip_photo_if_any">tankhua perchi ki tasveer (agar koi hai)</string>
+    <string name="back">Wapis</string>
+    <string name="what_will_you_use_the_loan_for">Ap qarz kis liye istemal karain gay?</string>
+    <string name="enter_purpose_here">Yahan likhen</string>
+    <string name="profession">Paisha/Kya kaam kartay hain?</string>
+    <string name="name_of_organization">Idaaray ka Naam</string>
+    <string name="monthly_income">Mahana Amdani</string>
+    <string name="expected_annual_income">Mutawaqa salana Amdani</string>
+    <string name="enter_your_expected_annual_income">Apni mutwaqa salana amdani likhen</string>
+    <string name="no_of_family_members_you_are_financially_responsible_for">Khandan men ap maali tour per kis kis kay liya zimadar hain?</string>
+    <string name="do_you_have_any_other_loans_currently">Kia iss waqt apne kahin aur se qqarz liya hua hay?</string>
+    <string name="which_bank_institution">Kis bank se karza liya hay?</string>
+    <string name="enter_bank_name">Bank/ Idaray ka name likhen</string>
+    <string name="total_loan_amount">Qarzay ki puri rakam</string>
+    <string name="enter_total_amount">Qarzay ki puri rakam likhen</string>
+    <string name="mobile_wallet_a_c">Jazzcash/Easypaisa</string>
+    <string name="_12456">12456</string>
+    <string name="purpose_of_application_fee">Darkhwast fees ka maqsad</string>
+    <string name="product_fee">Masnuaat ki fees</string>
+    <string name="please_transfer_application_fee_to_the_following_account_number_and_upload_screenshot_of_the_receipt">Brah-e-mahrbani apni application fee iss account number men muntakil karen aur raseed ki tasweer le kay yahan lagaen</string>
+    <string name="upload_receipt">Raseed ki tasweer lagain</string>
+    <string name="savee">Save</string>
+    <string name="disclaimerr">Dastbardari</string>
+    <string name="apply_now">Darkhwaast deyn.</string>
+    <string name="_1_please_attach_your_latest_utility_bill">1.Brah-e-mehrbani apna Bijli/Gas ka bill lagaen</string>
+    <string name="_2_utility_bill_must_be_of_your_residential_address">2.Biijli/Gas bill ap kay rehaishi patay ka hona chahiye.</string>
+    <string name="account_info_will_be_used_for">Account ki maloomat istemal ki jaaye gi</string>
+    <string name="disbursement_and_recovery_of_loan">Qarz ki adaegi aur wasooli</string>
+    <string name="bank_account_mobile_wallet">Jazzcash/ Easypaisa</string>
+    <string name="account_no">Wallet no #</string>
+    <string name="enter_your_account_number">Apna account number likhen</string>
+    <string name="bank_account_mobile_wallet_should_be_in_your_own_name_and_should_be_active">JazzCash yan Easypaisa ap ky apnay naam per hona chahiye aur ap kay istamal men hona chahiye.</string>
+
+
+    <string name="add_recovery">Wasooli shamil karain</string>
+    <string name="full_name">Pura name</string>
+    <string name="enter_your_full_name">Apna pura naam likhen</string>
+    <string name="date_of_birth">Peda honay ki tareekh</string>
+    <string name="select_date_of_birth">Peda honay ki tareekh ka intakhaab karen.</string>
+    <string name="parentage">Waldain</string>
+    <string name="marital_status">Marital Status</string>
+
+    <string name="email_optional">Email (ikhtyari)</string>
+    <string name="enter_your_valid_email_address">apna email pata darj karen </string>
+    <string name="next">Agay</string>
+    <string name="cnic">CNIC</string>
+    <string name="enter_your_cnic">CNIC number darj karen</string>
+    <string name="issue_date">jari karnay ki tareekh</string>
+    <string name="address">pata</string>
+    <string name="permanent_address">mustaqil pata</string>
+    <string name="permanent_addresss">mustaqil pata</string>
+    <string name="geo_location">Geo Location</string>
+    <string name="current_address">mojuda pata</string>
+    <string name="city_state">Shehar</string>
+    <string name="duration_at_current_residence_in_years">Kitnay arsay se ap apnay mojooda patay pe reh rahay hain? (salon men btaen)</string>
+    <string name="enter_duration_of_stay">kitna arsay se iss jagha pe reh rahay hain likhen? (salon men)</string>
+    <string name="geotagging_of_current_address">mojuda patay ki geotagging</string>
+    <string name="select_geo_location">Geo location muntakhib karain</string>
+    <string name="duration_of_stay_at_this_place">kitna arsay se iss jagha pe reh rahay hain</string>
+    <string name="father_husband">Baap/shohar</string>
+    <string name="enter_phone_no">Apna phone number likhen</string>
+    <string name="enter_phone_noo">Apna phone number likhen</string>
+    <string name="loan_amountt">Qarza ki rakam</string>
+    <string name="enter_loan_amount">Qarzay ki rakam likhen</string>
+    <string name="enter_fee">Fee darj karen</string>
+
+    <string name="loan_due_date">Qarzay ki adaigi ki akhiri tareekh</string>
+    <string name="your_due_date_is">Qarzay ki adaigi ki akhiri tareekh</string>
+    <string name="add_loan">ADD LOAN</string>
+    <string name="user_found">User mil gaya</string>
+    <string name="user_found_against_the_cnic_number_12345_3422456_3_with_name_of_xyz_and_parentage_abc_would_you_like_to_apply_loan">Darkhwast jari karnay walay ka tasdeek kay baad: CNIC, naam, aur sarparast/Baap yan Ma Kya ap Qarzay ki darkhwast dena chahtay hain?</string>
+    <string name="apply_loan">Darkwast deyn.</string>
+    <string name="cancell">Cancel</string>
+    <string name="do_you_or_anyone_in_your_household_have_a_smart_phone">Ap ya apkay ghar men kisi kay paas bhi touch wala phone hay?</string>
+    <string name="preferred_disbursement_method">Qarzay ki rakam wasool karnay ka konsa tareeqa pasand karen gay?</string>
+    <string name="upload_disbursement_form_image">Rakam wasooli ki raseed ki tasweer lagaen </string>
+    <string name="see_products">Masnuaat dekhain</string>
+    <string name="your_documents_are_pending">Apkay kaghzaat zer-e-ghour hain!</string>
+    <string name="your_profile_information_has_been_added_successfully">Apki Profile ki malumat jama kar di gain hain</string>
+
+    <string name="your_pin_code_has_been_successfully_set_up">Apka PIN code bana diya gaya hay.</string>
+
+    <string name="your_receipt_has_been_submitted_successfully">Apki raseed jama karwa di gai hay</string>
+
+    <string name="congratualtion">Muarak ho</string>
+    <string name="user_has_been_created_successfully">User account kamyabi se ban chuka hay</string>
+    <string name="for_adding_mobile_wallet_account">Jazzcash ya Easypaisa account shamil karnay kay liyay</string>
+    <string name="select_here">isko muntakhib karen</string>
+    <string name="expiry_date">expiry tareekh</string>
+    <string name="purpose">Maksad</string>
+    <string name="amountt">Rakam</string>
+    <string name="ok">Ok</string>
+    <string name="welcome_to_e_qard">Khush amdeed e-Qard!</string>
+    <string name="phone">Phone</string>
+
+    <string name="gender">Gender</string>
+
+    <string name="male">Mard</string>
+    <string name="female">Aurat</string>
+    <string name="transgender">Transgender</string>
+
+    <string name="profile">Profile</string>
+    <string name="basic_information">Basic Information</string>
+
+    <string name="select_your_branch">Branch ka intakhab krain</string>
+    <string name="wallet_information">Wallet Information</string>
+    <string name="what_did_they_use_loan_for">loan kaha istamal hoa ha?</string>
+    <string name="do_they_want_another_loan">kia ap dobara loan lana chahain ga?</string>
+    <string name="does_this_person_s_household_have_a_mobile_wallet">kia ap ka ghr ma kisi ka pass mobile wallet ha?</string>
+    <string name="upload_recovery_form_image">recovery form ki tasveer upload krain </string>
+
+    <string name="cheque_information">Cheque Information</string>
+    <string name="please_submit_your_application_fee_to_the_following_n_account_jazzcash_and_easy_paisa_account">apni fee darjzail account ma jana krwain (jazzcash and easy paisa account)</string>
+
+
+</resources>

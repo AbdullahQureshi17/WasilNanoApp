@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/ll_steps_tick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/h_border" />
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/btn_start_profile"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/h_border" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_step_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Evaluation in Process"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_step_title"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:text="status"
+            android:textSize="@dimen/h14" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+
+            android:layout_marginBottom="@dimen/dp_10"
+            android:id="@+id/iv_stage_logo"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_evaluation"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_step_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/iv_stage_logo"
+            android:text=""
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_start_profile"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/tv_step_desc"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bt_gradient"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

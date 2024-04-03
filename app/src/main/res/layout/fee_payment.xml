@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_fee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Transparent"
+    app:behavior_hideable="false"
+    android:clickable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:background="@drawable/dialog_gray_transparent"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Select an Option"
+                    android:textColor="@color/Black" />
+                <View
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkGray" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_names"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:id="@+id/ll_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/transparent_btn_ripple_gray"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_camera_take" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:text="Take Photo"
+                            android:textSize="12sp"
+                            android:textColor="@color/Black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:visibility="visible"
+                        android:id="@+id/ll_gallery"
+                        android:background="@drawable/transparent_btn_ripple_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_gallery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:text="Chose Photo"
+                            android:textSize="12sp"
+                            android:textColor="@color/Black" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

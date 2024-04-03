@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/textcolor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+    <style name="DialogStyle" parent="ThemeOverlay.AppCompat.Dialog.Alert"></style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+    </style>
+
+    <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/gradientstart</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:listChoiceIndicatorMultiple">@drawable/dialog_checkbox_green_selector
+        </item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialogfragmentsettings" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowBackground">@color/Transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/activity_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_fade_out</item>
+    </style>
+
+    <style name="switchColor">
+        <item name="colorControlActivated">@color/Green</item>
+    </style>
+
+    <style name="VerificationFlowTheme" parent="Theme.AppCompat">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyMatTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">@color/gradientstart</item>
+    </style>
+
+</resources>

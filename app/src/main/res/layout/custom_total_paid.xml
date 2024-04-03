@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10">
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkOrange" />
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+
+<!--                android:layout_below="@+id/tv_payment_type"-->
+<!--                android:layout_marginTop="8dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/transaction_id"-->
+<!--                android:textSize="@dimen/h12"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/Black"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_transaction_id"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/Black"-->
+<!--                android:textSize="12sp"/>-->
+
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tv_payment_type"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/Black" />
+
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_date"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:textSize="@dimen/h10"-->
+<!--                android:layout_below="@+id/payment_check"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:text=""/>-->
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

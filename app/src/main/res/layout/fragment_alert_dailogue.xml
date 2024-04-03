@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/Transparent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:elevation="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_failed"
+        />
+
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/fee_sucess_bg"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cross"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/iv_tick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_message"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/your_application_fee_has_been_paid_successfully"/>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_gradient"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:textColor="@color/White"
+            android:text="@string/continuee"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

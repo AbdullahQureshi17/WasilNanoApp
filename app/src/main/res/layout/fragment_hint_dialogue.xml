@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.dialoguefragment.HintDialogue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:paddingTop="10sp"
+        android:paddingBottom="@dimen/dp_20"
+        android:gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_please_attach_your_latest_utility_bill"
+            android:textSize="@dimen/h14"
+            android:padding="@dimen/h10"
+            android:textColor="@color/Black"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_utility_bill_must_be_of_your_residential_address"
+            android:textSize="@dimen/h14"
+            android:padding="@dimen/h10"
+            android:textColor="@color/Black"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_gradient"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+
+            android:textColor="@color/White"
+            android:text="@string/ok"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

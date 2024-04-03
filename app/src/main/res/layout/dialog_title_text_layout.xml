@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_launcher"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_failed" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_launcher"
+        fontPath="font/gotham_rounded_bold.otf"
+        android:textAlignment="center"
+        tools:ignore="MissingPrefix"
+        android:textStyle="bold"
+        android:padding="08dp"
+        android:text="adsadsa"
+        android:textColor="@color/Black"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="this is text"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textColor="@color/black"
+        android:id="@+id/tv_message"/>
+</LinearLayout>

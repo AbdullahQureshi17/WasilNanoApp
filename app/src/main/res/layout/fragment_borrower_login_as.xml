@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/myloan_bg"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".correspondant.fragment.VerificationFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/Transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_15"
+                android:background="@drawable/ic_back_arrow"
+                android:backgroundTint="@color/textcolor"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/tv_profile_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Add Applicant"
+                android:textColor="@color/textcolor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_15"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Ahmad Hassan"
+                android:textColor="@color/textcolor"
+                android:textSize="17sp" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_cnic" />
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/image2">
+
+                <TextView
+                    android:fontFamily="@font/quicksand_medium"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h12"
+                    android:text="CNIC:"/>
+
+                <TextView
+                    android:fontFamily="@font/quicksand_semi_bold"
+                    android:id="@+id/cnic"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h15"
+                    android:text="34101-5622233-1"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rlemail"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/email" />
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/image3">
+
+                <TextView
+                    android:fontFamily="@font/quicksand_medium"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h12"
+                    android:text="Sanction no:"/>
+
+                <TextView
+                    android:fontFamily="@font/quicksand_semi_bold"
+                    android:id="@+id/sanctionno"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h15"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/circular_white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Phone no"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/h12"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:drawableEnd="@drawable/ic_edit"
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparent"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/quicksand_regular"
+                android:hint="Enter phone no"
+                android:paddingStart="3dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="@dimen/dp_15"
+                android:inputType="number"
+                android:paddingBottom="5dp"
+                android:textColor="@color/Gray"
+                android:maxLength="12"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/llLogin"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+
+                android:visibility="gone"
+                android:id="@+id/btapplicant"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_weight=".5"
+                android:background="@drawable/bt_gradient"
+                android:text="Add Applicant"
+                android:textSize="@dimen/h16"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".5"
+                android:background="@drawable/bt_gradient"
+                android:text="Add Applicant"
+                android:textSize="@dimen/h16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

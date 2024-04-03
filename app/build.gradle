@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'checkstyle'
+//apply plugin: 'pmd'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.nano.liteloan"
+        minSdkVersion 22
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+    testOptions {
+        unitTests.all {
+            jvmArgs += '--add-opens=java.base/java.io=ALL-UNNAMED'
+        }
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+           // buildConfigField "String", "BASE_URL", "\"http://13.95.146.210/easy_akhuwat/public/index.php/\""
+
+            buildConfigField "String", "BASE_URL", "\"http://10.84.12.98/easy_akhuwat/public/\""
+
+          //  buildConfigField "String", "BASE_URL", "\"http://13.95.146.210/index.php/\""
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+
+ //           buildConfigField "String", "BASE_URL", "\"http://13.95.146.210/easy_akhuwat/public/index.php/\""
+            buildConfigField "String", "BASE_URL", "\"http://10.84.12.98/easy_akhuwat/public/\""
+
+           // buildConfigField "String", "BASE_URL", "\"http://13.95.146.210/index.php/\""
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.victor:lib:1.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+
+    implementation 'com.google.android.material:material:1.2.0-rc01'
+
+
+    implementation 'com.github.jd-alexander:library:1.1.0'
+
+    implementation 'ru.egslava:MaskedEditText:1.0.5'
+
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation group: 'com.google.android.material', name: 'material', version: '1.1.0'
+
+    implementation 'com.google.android.gms:play-services-auth:20.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.6.1'
+    implementation "com.google.android.gms:play-services-location:19.0.1"
+
+    implementation 'com.facebook.android:facebook-login:5.5.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'org.sufficientlysecure:html-textview:3.9'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.jaredrummler:android-device-names:1.0.9'
+
+
+    implementation 'com.github.santalu:mask-edittext:1.1.1'
+
+    implementation project(path: ':markdownview')
+
+    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
+
+    implementation 'org.sufficientlysecure:html-textview:4.0'
+
+//    implementation("com.microblink:blinkid:${rootProject.ext.blinkIdVersion}@aar") {
+//        transitive = true
+//    }
+//    implementation project(path: ':LibUtils')
+
+    implementation 'com.github.CanHub:Android-Image-Cropper:3.3.5'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    implementation 'com.google.firebase:firebase-config:21.4.1'
+    implementation 'com.github.gcacace:signature-pad:1.3.1'
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+//preBuild.dependsOn('checkstyle')
+//preBuild.dependsOn('pmd')
+////preBuild.dependsOn('spotbugsMain')
+//
+//check.dependsOn('checkstyle')
+//check.dependsOn('pmd')
+//check.dependsOn('spotbugsMain')
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.PermissionScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/ic_permission" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/permtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Permissions are required"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permtext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="e-Qard requires permission to access your data to determine your credit worthiness and provide you customized financial solution accordingly"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/bt_gradient"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

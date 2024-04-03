@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginStart="@dimen/h16"
+    android:layout_marginEnd="@dimen/h16"
+    android:scrollbars="none"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.fragment.dialoguefragment.DialogueFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+
+                android:background="@drawable/info_header"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Information"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"/>
+
+            </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp">
+
+                    <RelativeLayout
+                        android:background="@drawable/stroke_bg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:id="@+id/iv_profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/default_image" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:elevation="5dp"
+                        android:src="@drawable/add_image" />
+                </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:background="@drawable/border_gray_light"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxHeight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/phone"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/ed_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:maxHeight="0dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_gray_light"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxHeight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/full_name"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="@string/enter_your_full_name"
+                    android:inputType="text"
+                    android:maxHeight="0dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_gray_light"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxHeight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/email_optional"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/ed_emil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="@string/enter_your_valid_email_address"
+                    android:inputType="text"
+                    android:maxHeight="0dp"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@drawable/border_gray_light"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxHeight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="PIN Code* (for future login)"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/ed_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="Enter 4 digit PIN"
+                    android:inputType="numberPassword"
+                    android:maxHeight="0dp"
+                    android:maxLength="4"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@drawable/border_gray_light"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxHeight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Confirm PIN Code*"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/ed_pin_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="Enter 4 digit PIN"
+                    android:inputType="numberPassword"
+                    android:maxHeight="0dp"
+                    android:maxLength="4"
+                    android:textColor="@color/Gray"
+                    android:textSize="@dimen/h14" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textStyle="bold"
+                android:background="@drawable/bt_gradient"
+                android:textSize="@dimen/h14"
+                android:textColor="@color/white"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/save"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

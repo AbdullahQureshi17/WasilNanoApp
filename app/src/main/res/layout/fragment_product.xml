@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail_bg"
+    tools:context=".presentation.fragment.welcomescreen.ProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llnext"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/general_image"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_20" />
+
+                <TextView
+                    android:id="@+id/loan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:text="Instant Rs. 5000"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/h18"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_15"
+
+                android:layout_marginBottom="@dimen/dp_30"
+                android:orientation="vertical">
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/h12" />
+
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                </org.sufficientlysecure.htmltextview.HtmlTextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Disclaimer"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/tv_disclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/llnext"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20">
+
+
+        <Button
+
+            android:layout_weight="1"
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:visibility="gone"
+            android:background="@drawable/bt_gradient"
+            android:text="BACK"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/White"
+            android:textSize="@dimen/h12"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bt_gradient"
+            android:text="NEXT"
+            android:textColor="@color/White"
+            android:textSize="@dimen/h16"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
